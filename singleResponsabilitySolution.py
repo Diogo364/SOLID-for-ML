@@ -21,7 +21,7 @@ class WinePreprocessor:
 
 class WineClassifier:
     def __init__(self):
-        self.model = DecisionTreeClassifier()
+        self.model = DecisionTreeClassifier(random_state=42)
     
     def train(self, x, y):
         self.model.fit(x, y)

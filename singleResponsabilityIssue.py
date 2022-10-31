@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score
 
 class WineClassifier:
     def __init__(self):
-        self.model = DecisionTreeClassifier()
+        self.model = DecisionTreeClassifier(random_state=42)
         self._scaler = MinMaxScaler()
     
     def preprocess(self, data, train=True):
