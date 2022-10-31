@@ -1,6 +1,6 @@
 import os
 import os.path as osp
-from config import DATA_PATH
+from .config import DATA_PATH
 from sklearn.datasets import load_wine
 from sklearn.model_selection import train_test_split
 
