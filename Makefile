@@ -10,7 +10,7 @@ create-env:
 get-data:
 	@echo "Downloading Data"
 	$(CONDA_ACTIVATE)
-	python setup/get_wine_data.py;
+	python -m setup.get_wine_data;
 	@echo "Done!"
 
 setup: create-env get-data
